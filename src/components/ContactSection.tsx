@@ -158,47 +158,54 @@ const ContactSection = () => {
                 Send a Message
               </h3>
               
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              className="space-y-6"
-            > 
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
-
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
+              <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  className="space-y-6"
+                >
+                  {/* Required for Netlify */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="bot-field" />
+                
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                      className="w-full rounded-md border border-gray-300 px-4 py-2 text-black"
                     />
-                 </div>
-              
-                <div>
-                  <input
+                  </div>
+                
+                  <div>
+                    <input
                       type="email"
                       name="email"
                       placeholder="Your Email"
                       required
+                      className="w-full rounded-md border border-gray-300 px-4 py-2 text-black"
                     />
-
-                </div>
+                  </div>
+                
                   <div>
-                     <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    required
-                  />
-
-                </div>
-                 <button type="submit" className="flex items-center gap-2">
-                    <Send className="mr-2 h-4 w-4" />
+                    <textarea
+                      name="message"
+                      placeholder="Your Message"
+                      rows={4}
+                      required
+                      className="w-full rounded-md border border-gray-300 px-4 py-2 text-black"
+                    />
+                  </div>
+                
+                  <button
+                    type="submit"
+                    className="rounded-md bg-black px-6 py-2 text-white hover:bg-gray-800"
+                  >
                     Send Message
-                 </button>
-              </form>
+                  </button>
+                </form>
             </div>
           </motion.div>
         </div>
