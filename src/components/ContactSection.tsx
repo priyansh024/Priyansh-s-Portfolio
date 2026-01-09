@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "India",
+    value: "Indore, M.P, India",
     href: "#",
   },
 ];
@@ -31,7 +31,7 @@ const contactInfo = [
 const socialLinks = [
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/priyansh-mewada/",
+    href: "https://www.linkedin.com/in/priyansh-mewada-570a99260/",
     label: "LinkedIn",
   },
   {
