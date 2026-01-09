@@ -31,12 +31,12 @@ const contactInfo = [
 const socialLinks = [
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/priyansh-mewada",
+    href: "https://www.linkedin.com/in/priyansh-mewada/",
     label: "LinkedIn",
   },
   {
     icon: Github,
-    href: "https://github.com/priyansh-mewada",
+    href: "https://github.com/priyansh024",
     label: "GitHub",
   },
   {
@@ -45,6 +45,7 @@ const socialLinks = [
     label: "Email",
   },
 ];
+
 
 const ContactSection = () => {
   const ref = useRef(null);
