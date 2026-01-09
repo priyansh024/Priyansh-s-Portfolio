@@ -152,7 +152,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -top-8 right-0 lg:right-10 bg-card card-shadow rounded-2xl px-5 py-4 z-10"
+              className="absolute top-16 -right-4 lg:right-0 bg-card card-shadow rounded-2xl px-5 py-4 z-10"
             >
               <p className="text-3xl font-display font-bold text-foreground">B.Tech</p>
               <p className="text-sm text-muted-foreground">CSE Student</p>
