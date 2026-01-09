@@ -96,6 +96,12 @@ const HeroSection = () => {
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
               </Button>
+              <Button asChild variant="secondary" size="lg">
+                <a href="/resume.pdf" download="Priyansh_Mewada_Resume.pdf">
+                  Download CV
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              </Button>
               <Button asChild variant="outline" size="lg">
                 <a href="#contact" className="group">
                   <div className="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center mr-2 group-hover:bg-background group-hover:text-foreground transition-colors">
