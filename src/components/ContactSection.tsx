@@ -157,40 +157,47 @@ const ContactSection = () => {
               <h3 className="font-display font-bold text-xl mb-6">
                 Send a Message
               </h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              className="space-y-6"
+            > 
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
+
                 <div>
-                  <Input
+                  <input
+                    type="text"
+                    name="name"
                     placeholder="Your Name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="bg-background/10 border-background/20 text-background placeholder:text-background/50 h-12 rounded-xl"
-                  />
-                </div>
+                    />
+                 </div>
+              
                 <div>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="bg-background/10 border-background/20 text-background placeholder:text-background/50 h-12 rounded-xl"
-                  />
+                  <input
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+
                 </div>
-                <div>
-                  <Textarea
+                  <div>
+                     <textarea
+                    name="message"
                     placeholder="Your Message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                    rows={5}
-                    className="bg-background/10 border-background/20 text-background placeholder:text-background/50 resize-none rounded-xl"
                   />
+
                 </div>
-                <Button type="submit" size="lg" className="w-full">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
-                </Button>
+                 <button type="submit" className="flex items-center gap-2">
+                    <Send className="mr-2 h-4 w-4" />
+                    Send Message
+                 </button>
               </form>
             </div>
           </motion.div>
