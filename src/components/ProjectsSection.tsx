@@ -17,7 +17,7 @@ const projects = [
       { icon: Zap, text: "Optimized APIs" },
       { icon: Users, text: "Team of 3" },
     ],
-    github: "#",
+    github: "https://github.com/priyansh024/Online-voting-system",
     featured: true,
   },
   {
@@ -31,7 +31,7 @@ const projects = [
       { icon: Database, text: "Priority Queues" },
       { icon: Lock, text: "Bit-Level Encoding" },
     ],
-    github: "#",
+    github: "https://github.com/priyansh024/Huffman-file-compressor",
     featured: false,
   },
 ];
